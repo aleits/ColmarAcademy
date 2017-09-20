@@ -27,7 +27,7 @@ a {
 .container {
   max-width: 1080px;
   margin: 0 auto;
-  border: 1px solid #bab3ad;
+  border: 1px solid rgba(186, 179, 173,0.5);
 
 }
 
@@ -79,6 +79,11 @@ a {
 
 .menu a {
   color: #5e6570;
+  transition: color 750ms ease-out 100ms;
+}
+
+.menu a:hover {
+  color: #35d638;
 }
 
 .menu li {
@@ -92,6 +97,11 @@ a {
 
 .bold {
   font-weight: 700;
+  transition: color 750ms ease-out 100ms;
+}
+
+.bold:hover {
+  color: #35d638;
 }
 
 
@@ -107,6 +117,13 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #bab3ad;
+  pointer-events: none;
+  transition: background-color 750ms ease-out 100ms;
+
+}
+
+.main-banner:hover {
+  background-color: white;
 }
 
 .main-banner img {
@@ -122,6 +139,8 @@ a {
   font-size: 2.28rem;
 }
 
+
+
 .button {
   display: block;
   padding-top: 8px ;
@@ -134,7 +153,31 @@ a {
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
+  transition: all 750ms ease-out 100ms;
+  pointer-events: auto;
+
 }
+
+.button:hover {
+
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+
+}
+
+.button:active {
+
+  border: 2px solid rgba(53, 214, 56,0.5);
+  background-color: rgba(53, 214, 56,1);
+  color: white;
+
+}
+
+
+
+
+
 
 /**end main banner styling**/
 
@@ -163,7 +206,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 1px solid #bab3ad;
+  border-left: 1px solid rgba(186, 179, 173,0.4);
+
+
 }
 
 .info-horizontal {
@@ -171,11 +216,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+  transition:   background-color 750ms ease-in 100ms;
+
 }
 
+.info-horizontal:hover {
+  background-color: rgba(186, 179, 173, 0.9);
+}
+
+
 .campus {
-  border-top: 2px solid #bab3ad;
-  border-bottom: 2px solid #bab3ad;
+  border-top: 1px solid rgba(186, 179, 173,0.4);
+  border-bottom: 1px solid rgba(186, 179, 173,0.4);
 
 }
 
@@ -188,15 +240,37 @@ a {
 .info-text {
  width: 65%;
  padding-left: 16px;
+
+}
+
+.info-text a {
+ transition: color 750ms ease-in 100ms;
+
+}
+
+.info-text a:hover {
+  color: white;
 }
 
 /**  end informations styling**/
 
 /**  learning styling**/
 
+
+
 .learning {
 text-align: center;
 background-color: #e5e1de;
+transition: background-color 750ms linear 100ms;
+pointer-events: none;
+
+}
+
+.learning:hover {
+text-align: center;
+background-color: white;
+
+
 }
 
 .learning h1 {
@@ -216,7 +290,17 @@ background-color: #e5e1de;
   width: 31%;
   text-align: left;
   margin: 0 2% 3% 0;
+  transition:   background-color 750ms linear 100ms;
+  pointer-events: auto;
+
 }
+
+.learn-tile:hover {
+  background-color: #e5e1de;
+
+
+}
+
 
 .learn-tile:nth-child(3n+0) {
   margin: 0 0 3% 0;
@@ -387,9 +471,6 @@ margin-bottom: 32px;
   width: 100%;
 
 }
-
-
-
 
 
 }
