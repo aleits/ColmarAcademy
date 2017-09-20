@@ -1,0 +1,395 @@
+/** css reset**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/**general rules**/
+img {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #5e6570;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  border: 1px solid #bab3ad;
+
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+
+
+/**navbar styling**/
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.mobile {
+  display: none;
+}
+
+
+.logo  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 32px;
+  margin-left: 24px;
+}
+
+.logo p {
+  font-size: 1.25rem;
+}
+
+.menu  {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu a {
+  color: #5e6570;
+}
+
+.menu li {
+  margin-right: 16px;
+}
+
+
+.menu li:last-child {
+  margin-right: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+
+
+/** end navbar styling**/
+
+/**main banner styling**/
+
+.main-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bab3ad;
+}
+
+.main-banner img {
+  padding: 32px 24px;
+}
+
+/**.cta {
+  padding: 24px;
+}**/
+
+.cta h1 {
+  margin-bottom: 24px;
+  font-size: 2.28rem;
+}
+
+.button {
+  display: block;
+  padding-top: 8px ;
+  padding-bottom: 8px ;
+  max-width: 305px;
+  margin-top: 24px;
+  border: 2px solid #7c6e62;
+  background-color: #7c6e62;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/**end main banner styling**/
+
+/** informations styling**/
+
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+.box-left {
+  padding: 32px 24px;
+}
+
+
+ .left img {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+.box-left p {
+  margin: 24px 0 24px 0;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #bab3ad;
+}
+
+.info-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.campus {
+  border-top: 2px solid #bab3ad;
+  border-bottom: 2px solid #bab3ad;
+
+}
+
+
+.info-img{
+  width: 35%;
+  height: auto;
+}
+
+.info-text {
+ width: 65%;
+ padding-left: 16px;
+}
+
+/**  end informations styling**/
+
+/**  learning styling**/
+
+.learning {
+text-align: center;
+background-color: #e5e1de;
+}
+
+.learning h1 {
+  padding-top: 32px;
+}
+
+.learn-infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 72px;
+
+}
+
+.learn-tile {
+  background-color: white;
+  width: 31%;
+  text-align: left;
+  margin: 0 2% 3% 0;
+}
+
+.learn-tile:nth-child(3n+0) {
+  margin: 0 0 3% 0;
+}
+
+.learn-tile img {
+  width: 100%;
+}
+
+.learn-tile h3 {
+  padding: 16px;
+}
+
+.tile-text {
+  margin: 0 16px 16px 16px;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  margin-top: 16px;
+}
+
+/**  END OF learning styling**/
+
+/**start  THESYS   styles **/
+
+.box-left video {
+  width: 100%;
+}
+
+.thesys {
+  text-align: center;
+}
+
+.thesys h1 {
+  padding-top: 32px;
+}
+
+.thesys-wrapper{
+  display: flex;
+}
+
+.no-border {
+  border: 0;
+}
+
+/**END OF  THESYS   styles **/
+
+/**start  FOOTER   styles **/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+footer li {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-top: 16px;
+  margin-right: 16px;
+  list-style: none;
+
+
+}
+
+
+
+
+/**MOBILE media query**/
+
+@media screen and (max-width:600px) {
+
+
+  /**start  NAVBAR  MOBILE styles **/
+
+.container {
+  border: 0;
+}
+
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /**start  MAIN BANNER  MOBILE styles **/
+
+
+  .main-banner {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .main-banner img {
+    width: 100%;
+    margin: 0;
+  }
+
+ .cta {
+   padding: 32px 16px;
+   width: 100%;
+   text-align: center;
+ }
+
+ .button {
+   margin: 0 auto;
+   margin-top: 24px;<
+
+ }
+
+ /**start  information  MOBILE styles **/
+
+
+ .info-horizontal {
+   flex-direction: column;
+ }
+
+ .infos {
+   width: 100%;
+ }
+
+.info-img {
+  width: 100%;
+}
+
+.campus {
+  border: 0;
+}
+
+.info-text {
+width: 100%;
+margin-top: 32px;
+margin-bottom: 32px;
+}
+
+/**start  learning  MOBILE styles **/
+
+.learn-infos {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.learn-tile {
+  width: 100%;
+  text-align: left;
+}
+
+
+/**start  learning  THESYS styles **/
+
+
+.thesys-wrapper .box-left {
+  width: 100%;
+
+}
+
+
+
+
+
+}
