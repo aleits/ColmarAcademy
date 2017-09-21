@@ -330,6 +330,10 @@ background-color: white;
   border: 0;
 }
 
+.thesys-wrapper .info-text {
+  text-align: left;
+}
+
 /**END OF  THESYS   styles **/
 
 /**start  FOOTER   styles **/
