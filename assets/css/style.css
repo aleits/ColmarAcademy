@@ -130,9 +130,6 @@ a {
   padding: 32px 24px;
 }
 
-/**.cta {
-  padding: 24px;
-}**/
 
 .cta h1 {
   margin-bottom: 24px;
@@ -147,7 +144,6 @@ a {
   padding-bottom: 8px ;
   max-width: 305px;
   margin-top: 24px;
-  border: 2px solid #7c6e62;
   background-color: #7c6e62;
   color: white;
   border-radius: 5px;
@@ -159,24 +155,14 @@ a {
 }
 
 .button:hover {
-
-  border: 2px solid red;
   background-color: red;
   color: white;
-
 }
 
 .button:active {
-
-  border: 2px solid rgba(53, 214, 56,0.5);
   background-color: rgba(53, 214, 56,1);
   color: white;
-
 }
-
-
-
-
 
 
 /**end main banner styling**/
@@ -216,7 +202,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  transition:   background-color 750ms ease-in 100ms;
+  transition: background-color 750ms ease-in 100ms;
 
 }
 
@@ -224,13 +210,11 @@ a {
   background-color: rgba(186, 179, 173, 0.9);
 }
 
-
 .campus {
   border-top: 1px solid rgba(186, 179, 173,0.4);
   border-bottom: 1px solid rgba(186, 179, 173,0.4);
 
 }
-
 
 .info-img{
   width: 35%;
@@ -270,7 +254,6 @@ pointer-events: none;
 text-align: center;
 background-color: white;
 
-
 }
 
 .learning h1 {
@@ -297,7 +280,6 @@ background-color: white;
 
 .learn-tile:hover {
   background-color: #e5e1de;
-
 
 }
 
@@ -327,9 +309,6 @@ background-color: white;
 
 /**start  THESYS   styles **/
 
-.box-left video {
-  width: 100%;
-}
 
 .thesys {
   text-align: center;
@@ -341,6 +320,10 @@ background-color: white;
 
 .thesys-wrapper{
   display: flex;
+}
+
+.box-left video {
+  width: 100%;
 }
 
 .no-border {
@@ -374,6 +357,7 @@ footer li {
 
 }
 
+/**END OF  FOOTER   styles **/
 
 
 
@@ -384,9 +368,9 @@ footer li {
 
   /**start  NAVBAR  MOBILE styles **/
 
-.container {
-  border: 0;
-}
+  .container {
+    border: 0;
+  }
 
 
   .desktop {
